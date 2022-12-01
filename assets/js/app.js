@@ -1,9 +1,11 @@
 function scrollTrigger(selector) {
-    let els = document.querySelectorAll(selector)
-    els = Array.from(els)
-    els.forEach(el => {
+    let myElements = document.querySelectorAll(selector)
+    myElements = Array.from(myElements)
+    myElements.forEach(el => {
         addObserver(el)
     })
+
+
 }
 function addObserver(el) {
     // We are creating a new IntersectionObserver instance
