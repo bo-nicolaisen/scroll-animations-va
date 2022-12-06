@@ -17,13 +17,40 @@
 
 <body>
     <header>
-
+        <h1>Intersection Observer</h1>
+        <p>and CSS animation</p>
     </header>
 
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <section class="filler">
+        <h2>Er dit element synlig?</h2>
+        <p>Du kan bruge Intersection Observer api'et til at flytte din
+            synligheds detektion fra din main process til en
+            browser handled tråd, så du ikke spilder process tid i din main process.
+        </p>
+        <p>Intersection Observer fungerer ved at du opretter et nyt observer objekt
+            og asigner et dom element til din observer, når dette element så bevæger sig ind i din definerede viewport/
+            root,
+            så trigger den en callback med alle de elementer der er i din viewport. så du kan håndtere hvad du vil gøre
+            ved elementet.
+        </p>
+
+    </section>
+
+
+    <section class="scroll-reveal">
+        <div class="box fade">
+            The box!
+        </div>
+
+    </section>
+
+
+    <section class="scroll-reveal">
+
+
+    </section>
+
+
 
     <footer>
 
